@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TrackerActivity">
+
+
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+                                       app:layout_constraintTop_toTopOf="parent"
+                                       android:id="@+id/my_toolbar"
+                                       android:layout_height="?attr/actionBarSize"
+                                       android:background="@color/colorPrimary"
+                                       android:elevation="4dp"
+                                       android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                                       app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView android:layout_width="match_parent"
+              app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              android:text="Please, Select a Car Id from the dropdown menu below to track it!"
+              android:textStyle="bold"
+              android:textSize="18dp"
+              android:textAlignment="center"
+              android:layout_marginTop="120dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:textColor="@color/colorPrimaryDark"
+              android:id="@+id/carIdSelectInfoText"
+              android:layout_height="wrap_content"/>
+
+
+    <Spinner android:layout_width="wrap_content"
+             android:id="@+id/carList"
+             app:layout_constraintTop_toBottomOf="@id/carIdSelectInfoText"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             android:contextClickable="true"
+             android:textAlignment="center"
+             android:background="#FF80CBC4"
+             android:spinnerMode="dropdown"
+             android:layout_marginTop="50dp"
+             android:layout_height="wrap_content">
+    </Spinner>
+
+
+    <ImageView android:layout_width="wrap_content"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:src="@drawable/trackerlogo"
+               android:id="@+id/trackerLogo"
+               android:layout_marginBottom="80dp"
+               android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

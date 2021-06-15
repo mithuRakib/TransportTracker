@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TransportTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="firebase_path">Car/Location</string>
+    <string name="logout">Log Out</string>
+    <!--<string name="transport_id">123</string>-->
+    <!--<string name="firebase_email">mithu15-612@diu.edu.bd</string>-->
+    <!--<string name="firebase_password">123456</string>-->
+
+    <string-array name="carList">
+        <item>Select a Car ID  &#x2193;</item>
+        <item>123</item>
+        <item>456</item>
+        <item>789</item>
+        <item>Surjomukhi</item>
+        <item>Provati</item>
+    </string-array>
+</resources>
